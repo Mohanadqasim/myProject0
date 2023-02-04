@@ -1,85 +1,231 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-}
-
-:root {
-    --text-color: #302e29;
-    --main-color:#ff9100;
-    --second-color:#858585;
-    --bg-color:#fffbf6
-    --big-font: 4.5rem;
-    --h2-font: 2.6rem;
-    --p-font: 1.1rem;
-}
-
-body {
-    background: var(--bg-color);
-    color: var(--text-color)
+	font-family: 'Roboto Mono', monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 23px 15%;
-    transition: all .38s ease;
+	font-family: 'Roboto Mono', monospace;
+	background-color:#f0f0f0;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 125px;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--text-color);
+	text-decoration: none;
+	color: #3a6cf4;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.8em;
 }
-span {
-    color: var(--main-color);
+
+.nav a {
+	text-decoration: none;
+	color: #3a6cf4;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: 400;
+	padding-left: 30px;
 }
-.navbar {
+
+.nav a:hover{
+	color: #000000;
+}
+
+section {
+	padding: 100px 125px;
+}
+
+.main {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(https://images.pexels.com/photos/349610/pexels-photo-349610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.main h2{
+	color: #26125d;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.4em;
+	font-weight: 500;
+}
+
+
+.main h2 span{
+	display: inline-block;
+	margin-top: 10px;
+	color: #3a6cf4;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.main h3{
+	color: #26125d;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.main-btn {
+	font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	background-color: #3a6cf4;
+	text-decoration: none;
+	font-size:1.1em;
+	font-weight: 600;
+	display: inline-block;
+	padding: 0.9375em 2.1875px;
+	letter-spacing: 2px;
+	border-radius: 15px;
+	margin-bottom: 40px;
+	transition: 1s ease;
+}
+
+.main-btn:hover {
+    background-color: #26125d;
+    transform: scale(1.1);
+}
+
+.social-icons a {
+	text-decoration: none;
+    color: #26125d;
+    font-size: 1.7em;
+    margin-right: 20px;
+}
+
+.title {
+	font-family: 'Roboto Mono', monospace;
     display: flex;
-}
-.navbar a{
-    color: var(--text-color);
-    font-size: var(--p-font);
-    padding: 5px 10px;
-    margin: 2px 25px;
-    border-bottom: 2px solid transparent;
-    transition: all .38s ease;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
 }
 
-.navbar a:hover {
-    border-bottom: 2px solid var(--main-color);
-    color: var(--main-color);
+#menu{
+	background-color: #f0f0f0;
 }
-
-.h-icons{
+.content {
+	font-family: 'Roboto Mono', monospace;
+	align-items: center;
     display: flex;
-    align-items: center;
-    padding: 10px 22px;
-    background: var(--main-color);
-    border-radius: 5rem;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
 
-.h-icons i{
-    font-size: 22px;
-    color: var(--bg-color);
-    margin-right: 15px;
-    margin-left: 8px;
+.card {
+    background-color: #fff;
+    width: 15em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
 }
-#menu-icon {
-    font-size: 32px;
-    color: var(--bg-color);
-    z-index: 10001;
-    cursor:pointer;
-    display: none; 
+
+.card:hover {
+    transform: scale(1.1);
 }
+
+.card img{
+	width:12em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30%;
+}
+
+.meal-name {
+	text-align: center;
+	color: #26125d;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.info {
+	font-size: 0.6em;
+	color: #3a6cf4;
+	font-family: 'Roboto Mono', monospace;
+	margin-bottom: 15px;
+}
+
+.meals-btn {
+	font-family: 'Roboto Mono', monospace;
+	color: #fff;
+	background-color: #3a6cf4;
+	text-decoration: none;
+	font-size:1em;
+	font-weight: 400;
+	display: flex ;
+	padding: 0.9375em 2.1875px;
+	letter-spacing: 1px;
+	border-radius: 15px;
+	transition: 1s ease;
+	justify-content: center;
+
+}
+
+.meals-btn:hover {
+    background-color: #26125d;
+    transform: scale(1.1);
+}
+
+#contact-us {
+	width: 100%;
+	min-height: 1px;
+	display: flex;
+	align-items: center;
+	background: url(https://static.vecteezy.com/system/resources/previews/008/660/558/original/organic-food-background-hand-drawn-concept-free-vector.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.container {
+	border-radius: 5px;
+	padding: 20px;
+	font-family: 'Roboto Mono', monospace;
+	color: #3a6cf4;;
+  }
+  
+input[type=text ], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border-radius: 4px;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+
+  input[type=number ]{
+	width: 100%;
+	padding: 12px;
+	border-radius: 4px;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+  }
+  
+

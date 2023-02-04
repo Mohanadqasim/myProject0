@@ -5,33 +5,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Website</title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
         rel="stylesheet">
+
+    <title>Food</title>
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">Food<span>Fun</span></a>
-
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contatct">Contact</a></li>
-        </ul>
-        <div class="h-icons">
-            <a href="#"><i class='bx bx-search' ></i></box-icon></a>
-            <a href="#"><i class='bx bx-cart'></i></a>
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
+        <a href="#" class="logo">Food</a>
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact-us">Contact us</a>
+            <a href="#about">About</a>
+        </nav>
     </header>
-    <!--custom js link-->
-    <script type="text/javascript" src="JS/script.js"></script>
+    <section class="main" id="home">
+        <div>
+            <h2>Tasty Food!<br><span>Order Now!</span></h2>
+            <h3>Healthy Food!</h3>
+            <a href="#projects" class="main-btn">Today's Offers</a>
+            <div class="social-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </section>
+    <section class="cards" id="menu">
+        <h2 class="title">MENU</h2>
+        <div class="content">
+            <div class="card">
+                <div class="img">
+                    <img src="/img/m1.jpg" alt="">
+                </div>
+
+                <div class="meal-name">
+                    <h3>LOREM MEAL</h3>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione ex quo vel sunt
+                        reiciendis blanditiis ullam omnis cumque similique obcaecati velit, temporibus, eveniet debitis
+                        id a incidunt voluptate accusantium.</p>
+                </div>
+                <a href="#projects" class="meals-btn">4.99$</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/img/m2.jpg" alt="">
+                </div>
+
+                <div class="meal-name">
+
+
+                    <h3>DOLORES MEAL</h3>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione ex quo vel sunt
+                        reiciendis blanditiis ullam omnis cumque similique obcaecati velit, temporibus, eveniet debitis
+                        id a incidunt voluptate accusantium.</p>
+                </div>
+                <a href="#projects" class="meals-btn">6.99$</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/img/m3.jpg" alt="">
+                </div>
+
+                <div class="meal-name">
+                    <h3>KALIS MEAL</h3>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione ex quo vel sunt
+                        reiciendis blanditiis ullam omnis cumque similique obcaecati velit, temporibus, eveniet debitis
+                        id a incidunt voluptate accusantium.</p>
+                </div>
+                <a href="#projects" class="meals-btn">8.99$</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/img/m1.jpg" alt="">
+                </div>
+
+                <div class="meal-name">
+                    <h3>BAE MEAL</h3>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione ex quo vel sunt
+                        reiciendis blanditiis ullam omnis cumque similique obcaecati velit, temporibus, eveniet debitis
+                        id a incidunt voluptate accusantium.</p>
+                </div>
+                <a href="#projects" class="meals-btn">10.99$</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/img/m4.jpg" alt="">
+                </div>
+
+                <div class="meal-name">
+                    <h3>EDGHAN MEAL</h3>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione ex quo vel sunt
+                        reiciendis blanditiis ullam omnis cumque similique obcaecati velit, temporibus, eveniet debitis
+                        id a incidunt voluptate accusantium.</p>
+                </div>
+                <a href="#projects" class="meals-btn">12.99$</a>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="/img/m1.jpg" alt="">
+                </div>
+
+                <div class="meal-name">
+                    <h3>DARSEN MEAL</h3>
+                </div>
+                <div class="info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione ex quo vel sunt
+                        reiciendis blanditiis ullam omnis cumque similique obcaecati velit, temporibus, eveniet debitis
+                        id a incidunt voluptate accusantium.</p>
+                </div>
+                <a href="#projects" class="meals-btn">14.99$</a>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="contact-us">
+        <div>
+            <h2 class="title">Contact us</h2>
+            <div class="container">
+                <form>
+                    <label>First Name</label>
+                    <input type="text" class="fname"placeholder="Your name..">
+
+                    <label>Last Name</label>
+                    <input type="text" class="lname" placeholder="Your last name..">
+
+                    <label>Country</label>
+                    <select class="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label>Phone Number</label>
+                    <input type="number" class="phone-number" placeholder="+9627xxxxxxxx">
+
+                    <label>Subject</label>
+                    <textarea class="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <a href="#projects" class="meals-btn">SUBMIT</a>
+
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
